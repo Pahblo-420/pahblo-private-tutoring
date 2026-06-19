@@ -51,4 +51,4 @@ jobs:
       - name: Run Frontend Headless Tests
         run: |
           cd client
-          npm run test:e2e:headless
+          npx start-server-and-test dev http://localhost:5173 test:e2e:headless
